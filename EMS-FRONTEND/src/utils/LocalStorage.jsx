@@ -1,0 +1,317 @@
+const employees = [
+  {
+    id: "EMP001",
+    email: "rahul@gmail.com",
+    password: "123",
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Build Login Page",
+        taskDescription:
+          "Create a responsive login page with email and password fields.",
+        taskDate: "2026-09-20",
+        category: "Development",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "Fix Navbar Bug",
+        taskDescription: "Fix the navigation menu issue on mobile devices.",
+        taskDate: "2026-09-21",
+        category: "Bug Fixing",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Create User API",
+        taskDescription: "Create an API endpoint for adding new users.",
+        taskDate: "2026-09-18",
+        category: "Backend",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Database Setup",
+        taskDescription: "Configure the database connection for the project.",
+        taskDate: "2026-09-17",
+        category: "Database",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
+        taskTitle: "Deploy Application",
+        taskDescription:
+          "Deploy the latest version of the application to the server.",
+        taskDate: "2026-09-16",
+        category: "Deployment",
+      },
+    ],
+  },
+  {
+    id: "EMP002",
+    email: "priya@gmail.com",
+    password: "123",
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Design Dashboard",
+        taskDescription: "Create the UI design for the employee dashboard.",
+        taskDate: "2026-09-20",
+        category: "Design",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "Create Employee Cards",
+        taskDescription:
+          "Build reusable cards to display employee information.",
+        taskDate: "2026-09-21",
+        category: "Frontend",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Create Wireframe",
+        taskDescription: "Prepare a wireframe for the new dashboard layout.",
+        taskDate: "2026-09-18",
+        category: "Design",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Update CSS",
+        taskDescription:
+          "Improve spacing and typography across the application.",
+        taskDate: "2026-09-17",
+        category: "Frontend",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
+        taskTitle: "Mobile Layout",
+        taskDescription:
+          "Make the dashboard completely responsive on mobile devices.",
+        taskDate: "2026-09-15",
+        category: "Responsive",
+      },
+    ],
+  },
+  {
+    id: "EMP003",
+    email: "amit@gmail.com",
+    password: "123",
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Create Authentication API",
+        taskDescription: "Implement login and registration APIs for employees.",
+        taskDate: "2026-09-20",
+        category: "Backend",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "JWT Integration",
+        taskDescription: "Add JWT based authentication to protected routes.",
+        taskDate: "2026-09-22",
+        category: "Authentication",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "API Documentation",
+        taskDescription: "Document all available employee APIs.",
+        taskDate: "2026-09-18",
+        category: "Documentation",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Database Schema",
+        taskDescription: "Create the database schema for employee records.",
+        taskDate: "2026-09-17",
+        category: "Database",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
+        taskTitle: "API Testing",
+        taskDescription: "Test all API endpoints using Postman.",
+        taskDate: "2026-09-16",
+        category: "Testing",
+      },
+    ],
+  },
+  {
+    id: "EMP004",
+    email: "neha@gmail.com",
+    password: "123",
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Prepare Marketing Report",
+        taskDescription:
+          "Prepare a report containing the latest marketing performance.",
+        taskDate: "2026-09-20",
+        category: "Marketing",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "Social Media Campaign",
+        taskDescription: "Plan and schedule posts for the upcoming campaign.",
+        taskDate: "2026-09-23",
+        category: "Marketing",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Competitor Research",
+        taskDescription: "Research competitor products and pricing strategies.",
+        taskDate: "2026-09-18",
+        category: "Research",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Customer Analysis",
+        taskDescription: "Analyze customer feedback from the previous month.",
+        taskDate: "2026-09-17",
+        category: "Analysis",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
+        taskTitle: "Email Campaign",
+        taskDescription:
+          "Prepare and send the monthly promotional email campaign.",
+        taskDate: "2026-09-15",
+        category: "Marketing",
+      },
+    ],
+  },
+  {
+    id: "EMP005",
+    email: "rohan@gmail.com",
+    password: "123",
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Generate Sales Report",
+        taskDescription:
+          "Generate the weekly sales report and share it with the manager.",
+        taskDate: "2026-09-20",
+        category: "Sales",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "Client Follow Up",
+        taskDescription: "Follow up with clients regarding pending proposals.",
+        taskDate: "2026-09-21",
+        category: "Client Management",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Update Customer List",
+        taskDescription:
+          "Update the customer database with new contact details.",
+        taskDate: "2026-09-18",
+        category: "Sales",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Prepare Sales Presentation",
+        taskDescription:
+          "Create a presentation for the upcoming client meeting.",
+        taskDate: "2026-09-17",
+        category: "Presentation",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
+        taskTitle: "Client Meeting",
+        taskDescription:
+          "Attend the scheduled client meeting and discuss the new proposal.",
+        taskDate: "2026-09-16",
+        category: "Meeting",
+      },
+    ],
+  },
+];
+
+const admin = [
+  {
+    id: "ADM001",
+    email: "admin@gmail.com",
+    password: "123",
+  },
+];
+
+export const setLocalStorage = ()=>{
+  localStorage.setItem("employees",JSON.stringify(employees))
+  localStorage.setItem("admin",JSON.stringify(admin))
+}
+export const getLocalStorage = ()=>{
+  const employees = localStorage.getItem("employees")
+  console.log(JSON.parse(employees))
+  const admin = localStorage.getItem("admin")
+  console.log(admin)
+}
