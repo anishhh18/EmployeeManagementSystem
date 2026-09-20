@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+/* 
+Page background: bg-slate-950
+Cards and containers: bg-slate-900
+Inputs: bg-slate-800
+Borders: border-slate-700 and border-slate-800
+Primary action: bg-emerald-600
+Primary hover: hover:bg-emerald-500
+Main text: text-white
+Secondary text: text-slate-300 and text-slate-400
+Task colors: muted red, blue, green, yellow, and purple accents with transparent backgrounds
+*/
+
 *{
   color: #fff;
 }
